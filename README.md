@@ -21,3 +21,7 @@ GO
 INSERT INTO HumanResources.myTeam(EmployeeID,Name,Title,Background)  
    VALUES(49,'Hirum Mollicat','I.T. Specialist','Report Writing and Data Mining');  
 GO  
+
+BULK INSERT AdventureWorks2012.Sales.SalesOrderDetail  
+   FROM '\\computer2\salesforce\dailyorders\neworders.txt';  
+GO  
